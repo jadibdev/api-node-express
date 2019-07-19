@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 this sends a request with latlng to the google api 
 and gets the corresponding data on the start geolocation
 ----------------------------------------------------*/
-request.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=33.58831,-7.61138&key=AIzaSyBhHxldx70EpmZ1LZdFNBvEKDEd2Zlwqdg',
+request.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=33.58831,-7.61138&key=your_api_key',
     (error, res, body) => {
         if (error) {
             console.error(error)
@@ -30,7 +30,7 @@ request.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=33.58831,-
 this sends a request with latlng to the google api
 and gets the corresponding data for the end geolocation
 ----------------------------------------------------*/
-request.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=35.6895,139.69171&key=AIzaSyBhHxldx70EpmZ1LZdFNBvEKDEd2Zlwqdg',
+request.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=35.6895,139.69171&key=your_api_key',
     (error, res, body) => {
         if (error) {
             console.error(error)
